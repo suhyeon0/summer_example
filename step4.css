@@ -1,0 +1,53 @@
+*,
+*::after *::before {
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: 'Bagel Fat One', cursive; */
+  /* font-family: 'Diphylleia', serif; */
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'Pretendard Variable', Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+
+  font-size: 18px;
+  line-height: 1.5;
+  /* 보통 한글은 line-height : 1.7 (영문서체와 pretendard는 예외로 1.5) */
+
+  /* background-color: rgba(255, 0, 0, 0.1); */
+}
+
+.main {
+  /* background-color: rgba(255, 0, 0, 0.1); */
+}
+
+.section {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.section:nth-last-of-type(even) {
+  /* section 클래스 안의 자식 요소 중 두번쨰 */
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+.container {
+  border: 1px solid black;
+  padding: 56px, 24px;
+  margin-inline: auto;
+  /* 좌우마진일때 사용 (위아래까지 생각하려면 그냥 margin */
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  max-width: 65ch;
+  /* ch : 폰트 크기를 기준으로 50개가 들어갈 수 있게 해주는 단위 */
+}
+
+h2 {
+  font-family: 'Bagel Fat One', cursive;
+}
+
+@media (width <= 600px) {
+  body {
+    font-size: 14px;
+  }
+}
